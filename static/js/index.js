@@ -1,0 +1,1 @@
+fetch("https://api.chucknorris.io/jokes/random?category={category}")
