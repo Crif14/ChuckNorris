@@ -1,0 +1,16 @@
+@import "img.css";
+@import "menuAScelta.css";
+@import "button.css";
+@import "text.css";
+@import "info.css";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    padding: 50px;
+    color: white;
+}
+
+.hide {
+    display: none;
+}

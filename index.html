@@ -11,30 +11,57 @@
 </head>
 
 <body>
-    <button class=" " id="avviogioco">Avvia Gioco</button>
-    <div class="dropdown">
-        <button class="" type="button" id="difficultyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            Scegli Difficoltà
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
-            <li><a class="dropdown-item" href="#">animal</a></li>
-            <li><a class="dropdown-item" href="#">career</a></li>
-            <li><a class="dropdown-item" href="#">celebrity</a></li>
-            <li><a class="dropdown-item" href="#">dev</a></li>
-            <li><a class="dropdown-item" href="#">explicit</a></li>
-            <li><a class="dropdown-item" href="#">fashion</a></li>
-            <li><a class="dropdown-item" href="#">food</a></li>
-            <li><a class="dropdown-item" href="#">history</a></li>
-            <li><a class="dropdown-item" href="#">money</a></li>
-            <li><a class="dropdown-item" href="#">movie</a></li>
-            <li><a class="dropdown-item" href="#">music</a></li>
-            <li><a class="dropdown-item" href="#">political</a></li>
-            <li><a class="dropdown-item" href="#">religion</a></li>
-            <li><a class="dropdown-item" href="#">science</a></li>
-            <li><a class="dropdown-item" href="#">sport</a></li>
-            <li><a class="dropdown-item" href="#">travel</a></li>
-            <li><a class="dropdown-item" href="#"></a></li>
-        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://api.chucknorris.io/">
+                    <img src=" static\image\chuckNorrisImg.png" id="imgsito">
+                </a>
+                <div id="info">
+                    <h3>Come funziona?</h3>
+                    <ol>
+                        <li>Seleziona una categoria dal menu a tendina.</li>
+                        <li>Clicca sul pulsante per generare una battuta.</li>
+                        <li>La battuta apparirà nella nuvola di Chuck Norris!</li>
+                    </ol>
+                    <p>💡 Se non scegli una categoria, il pulsante diventerà arancione per segnalare l'errore.</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="dropdown">
+                    <button class="" type="button" id="battutaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Scegli Difficoltà
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
+                        <li><a class="dropdown-item" value="animal" href="#">animal</a></li>
+                        <li><a class="dropdown-item" href="#">career</a></li>
+                        <li><a class="dropdown-item" href="#">celebrity</a></li>
+                        <li><a class="dropdown-item" href="#">dev</a></li>
+                        <li><a class="dropdown-item" href="#">explicit</a></li>
+                        <li><a class="dropdown-item" href="#">fashion</a></li>
+                        <li><a class="dropdown-item" href="#">food</a></li>
+                        <li><a class="dropdown-item" href="#">history</a></li>
+                        <li><a class="dropdown-item" href="#">money</a></li>
+                        <li><a class="dropdown-item" href="#">movie</a></li>
+                        <li><a class="dropdown-item" href="#">music</a></li>
+                        <li><a class="dropdown-item" href="#">political</a></li>
+                        <li><a class="dropdown-item" href="#">religion</a></li>
+                        <li><a class="dropdown-item" href="#">science</a></li>
+                        <li><a class="dropdown-item" href="#">sport</a></li>
+                        <li><a class="dropdown-item" href="#">travel</a></li>
+                        <li><a class="dropdown-item" href="#"></a></li>
+                    </ul>
+                </div>
+                <input type="button" id="caricaJoke" value="Carica battuta">
+                <div id="immaginiChuck">
+                    <img id="imgChuck" src="static/image/chucc_pensa.png">
+                    <div class="nuvola-container">
+                        <img id="imgNuvola" class="hide" src="static/image/nuvola.png">
+                        <p id="battuta"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

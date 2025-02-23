@@ -1,0 +1,28 @@
+#imgsito {
+    width: 200px;
+    height: auto;
+}
+
+#imgChuck {
+    width: 300px;
+    height: 700px;
+}
+
+
+.nuvola-container {
+    position: relative;
+    display: inline-block;
+    top: -300px;
+    left: -50px;
+}
+
+#imgNuvola {
+    position: relative;
+    width: 750px;
+    height: 800px;
+}
+
+#immaginiChuck {
+    display: flex;
+    margin-left: 100px;
+}
